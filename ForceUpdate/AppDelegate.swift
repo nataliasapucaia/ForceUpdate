@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupRemoteConfig()
 
         if ForceUpdateChecker().check() == .shouldUpdate {
-            let alert = UIAlertController(title: "Please update",
+            let alert = UIAlertController(title: "There is a new app version",
                                           message: "There are new features in our app, please update",
                                           preferredStyle: .alert)
             let action = UIAlertAction(title: "Update", style: .default, handler: goToAppStore)

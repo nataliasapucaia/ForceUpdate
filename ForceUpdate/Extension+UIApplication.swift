@@ -9,7 +9,7 @@ import UIKit
 
 extension UIApplication {
     func openAppStore(for appID: String) {
-        let appStoreURL = "https://itunes.apple.com/app"
+        let appStoreURL = "https://itunes.apple.com/app/\(appID)"
         guard let url = URL(string: appStoreURL) else {
             return
         }

@@ -16,6 +16,7 @@
 		1F0248CD28A3F4FE00EB62C1 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F0248CC28A3F4FE00EB62C1 /* FirebaseRemoteConfigSwift */; };
 		1F0248CF28A41F2D00EB62C1 /* ForceUpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0248CE28A41F2D00EB62C1 /* ForceUpdateChecker.swift */; };
 		1FB86AC328A445100004E440 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB86AC228A445100004E440 /* Extension+UIApplication.swift */; };
+		1FB86AC528A5396B0004E440 /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB86AC428A5396B0004E440 /* Extension+Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1F0248C728A3F3B800EB62C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F0248CE28A41F2D00EB62C1 /* ForceUpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceUpdateChecker.swift; sourceTree = "<group>"; };
 		1FB86AC228A445100004E440 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+		1FB86AC428A5396B0004E440 /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				1F02489728A3ED5D00EB62C1 /* AppDelegate.swift */,
 				1FB86AC228A445100004E440 /* Extension+UIApplication.swift */,
 				1F02489B28A3ED5D00EB62C1 /* ViewController.swift */,
+				1FB86AC428A5396B0004E440 /* Extension+Bundle.swift */,
 				1F0248A028A3ED6000EB62C1 /* Assets.xcassets */,
 				1F0248CE28A41F2D00EB62C1 /* ForceUpdateChecker.swift */,
 				1F0248A228A3ED6000EB62C1 /* LaunchScreen.storyboard */,
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F02489C28A3ED5D00EB62C1 /* ViewController.swift in Sources */,
+				1FB86AC528A5396B0004E440 /* Extension+Bundle.swift in Sources */,
 				1F0248CF28A41F2D00EB62C1 /* ForceUpdateChecker.swift in Sources */,
 				1FB86AC328A445100004E440 /* Extension+UIApplication.swift in Sources */,
 				1F02489828A3ED5D00EB62C1 /* AppDelegate.swift in Sources */,
