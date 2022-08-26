@@ -21,41 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .systemBackground
         window?.rootViewController = ViewController()
 
+        //1
         FirebaseApp.configure()
 
         return true
     }
 
+    //5
     func applicationDidBecomeActive(_ application: UIApplication) {
         verifyVersion()
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        verifyVersion()
-    }
-
-    func verifyVersion() {
-        setupRemoteConfig()
-
-        if ForceUpdateChecker().check() == .shouldUpdate {
-            let alert = UIAlertController(title: "There is a new app version",
-                                          message: "There are new features in our app, please update",
-                                          preferredStyle: .alert)
-            let action = UIAlertAction(title: "Update", style: .default, handler: goToAppStore)
-            alert.addAction(action)
-            window?.rootViewController?.present(alert, animated: true)
-        }
-    }
-
-    func goToAppStore(action: UIAlertAction) {
-        let appId = "1234567"
-        UIApplication.shared.openAppStore(for: appId)
     }
 }
 
 extension AppDelegate {
+    //2
     func setupRemoteConfig(){
-
         let remoteConfig = RemoteConfig.remoteConfig()
 
         let defaults : [String : Any] = [
@@ -76,6 +56,24 @@ extension AppDelegate {
             }
         }
     }
+
+    //3
+    func goToAppStore(action: UIAlertAction) {
+        let appId = "1234567"
+        UIApplication.shared.openAppStore(for: appId)
+    }
+
+    //4
+    func verifyVersion() {
+        setupRemoteConfig()
+
+        if ForceUpdateChecker().check() == .shouldUpdate {
+            let alert = UIAlertController(title: "New version avaiable",
+                                          message: "There are new features avaiable, please update your app",
+                                          preferredStyle: .alert)
+            let action = UIAlertAction(title: "Update", style: .default, handler: goToAppStore)
+            alert.addAction(action)
+            window?.rootViewController?.present(alert, animated: true)
+        }
+    }
 }
-
-
